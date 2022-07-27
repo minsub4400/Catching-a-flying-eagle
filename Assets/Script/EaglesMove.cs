@@ -8,11 +8,11 @@ using UnityEngine;
 public class EaglesMove : MonoBehaviour
 {
     // 행동 최소 범위
-    private int minMove = -1;
+    private int minMove = -6;
     // 행동 최대 범위
-    private int maxMove = 1;
+    private int maxMove = 6;
     // 행동 스피드
-    public float moveSpeed = 15.0f;
+    public float moveSpeed = 0.05f;
     // 행동 범위 저장 변수
     public float randMoveX;
     public float randMoveY;
@@ -22,35 +22,66 @@ public class EaglesMove : MonoBehaviour
     private float backGroundY;
 
     // 배경 콜라이더의 사이즈 가져오기 위한 변수
-    BackgroundLoop backgroundLoop;
+    private BackgroundLoop backgroundLoop;
+
+    private Vector2 randMoveXY;
+
+    // 베지어 커브 사용을 위한 애니매이션
+    /*[SerializeField]
+    private AnimationCurve curve;*/
+
+    private Vector2 target;
+    private float targetX;
+    private float targetY;
 
     void Start()
     {
         // 초기화
+        targetX = Random.Range(-6, 6);
+        targetY = Random.Range(-2.2f, 2.2f);
+        target = new Vector2(targetX, targetY);
         randMoveX = Random.Range(minMove, maxMove);
         randMoveY = Random.Range(minMove, maxMove);
         backgroundLoop = FindObjectOfType<BackgroundLoop>();
         backGroundX = 60;//backgroundLoop.width; // 배경화면 가로 [60]
         backGroundY = 40;//backgroundLoop.hight; // 배경화면 세로 [40]
+
     }
 
     void Update()
     {
-        float moveValueX = randMoveX * moveSpeed * Time.deltaTime;
-        float moveValueY = randMoveY * moveSpeed * Time.deltaTime;
-        //transform.Translate(moveValueX, moveValueY, 0f);
-        transform.position += new Vector3(moveValueX, moveValueY, 0f);
+        //StartCoroutine(Moving());
 
-        Vector2 myPosition = transform.position;
+        transform.position = Vector3.Slerp(transform.position, target, moveSpeed * Time.deltaTime);
 
-        if (myPosition.x >= backGroundX || myPosition.y >= backGroundY)
+        if (transform.position.x == target.x && transform.position.y == target.y)
         {
-            Debug.Log("배경화면 밖으로 나감");
+            targetX = Random.Range(-6, 6);
+            targetY = Random.Range(-2.2f, 2.2f);
+            target = new Vector2(targetX, targetY);
         }
 
-        randMoveX = Random.Range(minMove, maxMove);
-        randMoveY = Random.Range(minMove, maxMove);
-
-
     }
+
+    /*private IEnumerator Moving()
+    {
+        randMoveX = Random.Range(minMove, maxMove) * moveSpeed;
+        randMoveY = Random.Range(minMove, maxMove) * moveSpeed;
+        randMoveXY = new Vector2(randMoveX, randMoveY);
+
+        // 죽지 않았다면 계속 움직임
+        if (true)
+        {
+            transform.Translate(randMoveXY * Time.deltaTime);
+
+        }
+        yield return new WaitForSeconds(20f);
+
+        *//*if (myPosition.x >= backGroundX || myPosition.y >= backGroundY)
+        {
+            Debug.Log("배경화면 밖으로 나감");
+        }*//*
+
+        
+    }*/
 }
