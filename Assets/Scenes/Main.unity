@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 114896781}
   - component: {fileID: 114896783}
   - component: {fileID: 114896782}
+  - component: {fileID: 114896784}
   m_Layer: 0
   m_Name: GoldenEagles0
   m_TagString: Untagged
@@ -228,6 +229,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &114896784
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114896780}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.2
 --- !u!1 &125380602
 GameObject:
   m_ObjectHideFlags: 0
@@ -934,6 +951,7 @@ GameObject:
   - component: {fileID: 672758802}
   - component: {fileID: 672758803}
   - component: {fileID: 672758804}
+  - component: {fileID: 672758805}
   m_Layer: 0
   m_Name: WhiteEagle
   m_TagString: Untagged
@@ -993,6 +1011,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &672758805
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672758801}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &705522492
 GameObject:
   m_ObjectHideFlags: 0
@@ -1628,6 +1662,7 @@ GameObject:
   - component: {fileID: 1536547261}
   - component: {fileID: 1536547263}
   - component: {fileID: 1536547262}
+  - component: {fileID: 1536547264}
   m_Layer: 0
   m_Name: BlackEagle0
   m_TagString: Untagged
@@ -1722,6 +1757,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1536547264
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536547260}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4
 --- !u!1 &1687125130
 GameObject:
   m_ObjectHideFlags: 0
@@ -1765,6 +1816,7 @@ GameObject:
   - component: {fileID: 1744016338}
   - component: {fileID: 1744016340}
   - component: {fileID: 1744016339}
+  - component: {fileID: 1744016341}
   m_Layer: 0
   m_Name: WhiteEagle0
   m_TagString: Untagged
@@ -1779,8 +1831,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1744016337}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.33, y: 0.27, z: 24.800007}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.37, y: 0.34, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1859,6 +1911,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1744016341
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744016337}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.000000059604645}
+  serializedVersion: 2
+  m_Radius: 0.3
 --- !u!1 &1781609523
 GameObject:
   m_ObjectHideFlags: 0
@@ -1954,6 +2022,7 @@ GameObject:
   - component: {fileID: 1820334674}
   - component: {fileID: 1820334676}
   - component: {fileID: 1820334675}
+  - component: {fileID: 1820334677}
   m_Layer: 0
   m_Name: BaldEagle0
   m_TagString: Untagged
@@ -2048,6 +2117,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1820334677
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820334673}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.00000023841858, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.6
 --- !u!1 &1908402012
 GameObject:
   m_ObjectHideFlags: 0
