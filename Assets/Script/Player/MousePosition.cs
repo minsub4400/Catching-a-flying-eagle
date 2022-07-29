@@ -12,7 +12,7 @@ public class MousePosition : MonoBehaviour
         {
             // 마우스 포인터 위치 찍기
             mPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Debug.Log(mPosition);
+            //Debug.Log(mPosition);
             // 마우스 위치로 게임 오브젝트 옮기기
             transform.position = mPosition;
         }

@@ -6,7 +6,6 @@ public class SightCursor : MonoBehaviour
 {
     [SerializeField]
     Texture2D cursorImg;
-    public GameObject gun;
 
     void Start()
     {

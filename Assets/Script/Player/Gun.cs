@@ -26,7 +26,6 @@ public class Gun : MonoBehaviour
 
     void Start()
     {
-        eaglesHealth = FindObjectOfType<EaglesHealth>();
         eaglesMove = GetComponent<EaglesMove>();
         mousePosition = GetComponent<MousePosition>();
         curcleCollider2D = GetComponent<CircleCollider2D>();
@@ -45,11 +44,8 @@ public class Gun : MonoBehaviour
         // 발사 저장 위치가 타겟 콜라이더 위치 안에 있으면 Die 실행
 
         // 콜라이더 활성화
-        curcleCollider2D.enabled = true;
-        /***********************************************************************
-        eaglesHealth.Die();
+        //curcleCollider2D.enabled = true;
     }
-
 
     private IEnumerable ShotEffect()
     {
