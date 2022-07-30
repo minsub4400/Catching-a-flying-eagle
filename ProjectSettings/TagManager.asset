@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Eagle
   - Point1
+  - StartBurtten
+  - HowToPlayBurtten
+  - SelectCursor
   layers:
   - Default
   - TransparentFX
