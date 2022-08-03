@@ -594,6 +594,7 @@ GameObject:
   - component: {fileID: 83005052}
   - component: {fileID: 83005051}
   - component: {fileID: 83005050}
+  - component: {fileID: 83005057}
   m_Layer: 5
   m_Name: GoldenEagle
   m_TagString: Gold
@@ -674,7 +675,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collider2D: {fileID: 83005053}
   rigidBody2D: {fileID: 83005054}
-  rotationSpeed: 0
+  spin: {fileID: 0}
 --- !u!58 &83005053
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -750,6 +751,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 83005048}
   m_CullTransparentMesh: 1
+--- !u!114 &83005057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83005048}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 042faf1b42933d2409edc28414c46f48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 300
 --- !u!1 &89388838
 GameObject:
   m_ObjectHideFlags: 0
@@ -766,6 +780,7 @@ GameObject:
   - component: {fileID: 89388842}
   - component: {fileID: 89388841}
   - component: {fileID: 89388847}
+  - component: {fileID: 89388848}
   m_Layer: 5
   m_Name: WhiteEagle
   m_TagString: White
@@ -825,8 +840,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collider2D: {fileID: 89388843}
-  rigidBody2D: {fileID: 0}
-  rotationSpeed: 0
+  rigidBody2D: {fileID: 89388844}
+  spin: {fileID: 0}
 --- !u!58 &89388843
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -922,6 +937,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &89388848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89388838}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 042faf1b42933d2409edc28414c46f48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 300
 --- !u!1 &92649266
 GameObject:
   m_ObjectHideFlags: 0
@@ -1388,7 +1416,6 @@ RectTransform:
   - {fileID: 92649267}
   - {fileID: 1624024006}
   - {fileID: 19908850}
-  - {fileID: 270760549}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1413,6 +1440,7 @@ GameObject:
   - component: {fileID: 171806316}
   - component: {fileID: 171806315}
   - component: {fileID: 171806314}
+  - component: {fileID: 171806321}
   m_Layer: 5
   m_Name: WhiteEagle
   m_TagString: White
@@ -1492,8 +1520,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collider2D: {fileID: 171806317}
-  rigidBody2D: {fileID: 0}
-  rotationSpeed: 0
+  rigidBody2D: {fileID: 171806318}
+  spin: {fileID: 0}
 --- !u!58 &171806317
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1569,6 +1597,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 171806312}
   m_CullTransparentMesh: 1
+--- !u!114 &171806321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171806312}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 042faf1b42933d2409edc28414c46f48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 300
 --- !u!1 &178922987
 GameObject:
   m_ObjectHideFlags: 0
@@ -1585,6 +1626,7 @@ GameObject:
   - component: {fileID: 178922991}
   - component: {fileID: 178922990}
   - component: {fileID: 178922989}
+  - component: {fileID: 178922996}
   m_Layer: 5
   m_Name: BlackEagle
   m_TagString: Black
@@ -1664,8 +1706,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collider2D: {fileID: 178922992}
-  rigidBody2D: {fileID: 0}
-  rotationSpeed: 0
+  rigidBody2D: {fileID: 178922993}
+  spin: {fileID: 0}
 --- !u!58 &178922992
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1741,6 +1783,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 178922987}
   m_CullTransparentMesh: 1
+--- !u!114 &178922996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178922987}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 042faf1b42933d2409edc28414c46f48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 300
 --- !u!1 &184975186
 GameObject:
   m_ObjectHideFlags: 0
@@ -2025,96 +2080,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 231532783}
   m_CullTransparentMesh: 1
---- !u!1 &270760548
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 270760549}
-  - component: {fileID: 270760552}
-  - component: {fileID: 270760551}
-  - component: {fileID: 270760550}
-  m_Layer: 5
-  m_Name: Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &270760549
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 270760548}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 171003127}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 682, y: -143}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &270760550
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 270760548}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 860f2d95859774a488bffecc609180ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationSpeed: 50
---- !u!114 &270760551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 270760548}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &270760552
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 270760548}
-  m_CullTransparentMesh: 1
 --- !u!1 &308088809
 GameObject:
   m_ObjectHideFlags: 0
@@ -2131,6 +2096,7 @@ GameObject:
   - component: {fileID: 308088817}
   - component: {fileID: 308088816}
   - component: {fileID: 308088818}
+  - component: {fileID: 308088819}
   m_Layer: 5
   m_Name: GoldenEagle
   m_TagString: Gold
@@ -2266,7 +2232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collider2D: {fileID: 308088811}
   rigidBody2D: {fileID: 308088812}
-  rotationSpeed: 0
+  spin: {fileID: 308088819}
 --- !u!95 &308088818
 Animator:
   serializedVersion: 4
@@ -2287,6 +2253,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &308088819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308088809}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 042faf1b42933d2409edc28414c46f48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 300
 --- !u!1 &312495738
 GameObject:
   m_ObjectHideFlags: 0
@@ -2379,6 +2358,7 @@ GameObject:
   - component: {fileID: 352288378}
   - component: {fileID: 352288377}
   - component: {fileID: 352288376}
+  - component: {fileID: 352288383}
   m_Layer: 5
   m_Name: GoldenEagle
   m_TagString: Gold
@@ -2459,7 +2439,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collider2D: {fileID: 352288379}
   rigidBody2D: {fileID: 352288380}
-  rotationSpeed: 0
+  spin: {fileID: 0}
 --- !u!58 &352288379
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2535,6 +2515,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 352288374}
   m_CullTransparentMesh: 1
+--- !u!114 &352288383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352288374}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 042faf1b42933d2409edc28414c46f48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 300
 --- !u!1 &384869726
 GameObject:
   m_ObjectHideFlags: 0
@@ -2806,6 +2799,7 @@ GameObject:
   - component: {fileID: 447823430}
   - component: {fileID: 447823429}
   - component: {fileID: 447823428}
+  - component: {fileID: 447823435}
   m_Layer: 5
   m_Name: BladEagle
   m_TagString: Bald
@@ -2885,8 +2879,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collider2D: {fileID: 447823431}
-  rigidBody2D: {fileID: 0}
-  rotationSpeed: 0
+  rigidBody2D: {fileID: 447823432}
+  spin: {fileID: 0}
 --- !u!58 &447823431
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2962,6 +2956,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 447823426}
   m_CullTransparentMesh: 1
+--- !u!114 &447823435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447823426}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 042faf1b42933d2409edc28414c46f48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 300
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -3441,6 +3448,7 @@ GameObject:
   - component: {fileID: 669354259}
   - component: {fileID: 669354258}
   - component: {fileID: 669354257}
+  - component: {fileID: 669354264}
   m_Layer: 5
   m_Name: BlackEagle
   m_TagString: Black
@@ -3520,8 +3528,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collider2D: {fileID: 669354260}
-  rigidBody2D: {fileID: 0}
-  rotationSpeed: 0
+  rigidBody2D: {fileID: 669354261}
+  spin: {fileID: 0}
 --- !u!58 &669354260
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3597,6 +3605,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 669354255}
   m_CullTransparentMesh: 1
+--- !u!114 &669354264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669354255}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 042faf1b42933d2409edc28414c46f48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 300
 --- !u!1 &750590947
 GameObject:
   m_ObjectHideFlags: 0
@@ -3613,6 +3634,7 @@ GameObject:
   - component: {fileID: 750590951}
   - component: {fileID: 750590950}
   - component: {fileID: 750590949}
+  - component: {fileID: 750590956}
   m_Layer: 5
   m_Name: BladEagle
   m_TagString: Bald
@@ -3692,8 +3714,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collider2D: {fileID: 750590952}
-  rigidBody2D: {fileID: 0}
-  rotationSpeed: 0
+  rigidBody2D: {fileID: 750590953}
+  spin: {fileID: 0}
 --- !u!58 &750590952
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3769,6 +3791,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 750590947}
   m_CullTransparentMesh: 1
+--- !u!114 &750590956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750590947}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 042faf1b42933d2409edc28414c46f48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 300
 --- !u!1 &785546373
 GameObject:
   m_ObjectHideFlags: 0
@@ -4869,6 +4904,7 @@ GameObject:
   - component: {fileID: 973345206}
   - component: {fileID: 973345205}
   - component: {fileID: 973345204}
+  - component: {fileID: 973345211}
   m_Layer: 5
   m_Name: BladEagle
   m_TagString: Bald
@@ -4948,8 +4984,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collider2D: {fileID: 973345207}
-  rigidBody2D: {fileID: 0}
-  rotationSpeed: 0
+  rigidBody2D: {fileID: 973345208}
+  spin: {fileID: 0}
 --- !u!58 &973345207
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5025,6 +5061,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 973345202}
   m_CullTransparentMesh: 1
+--- !u!114 &973345211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973345202}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 042faf1b42933d2409edc28414c46f48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 300
 --- !u!1 &1001188795
 GameObject:
   m_ObjectHideFlags: 0
@@ -5890,6 +5939,7 @@ GameObject:
   - component: {fileID: 1347650902}
   - component: {fileID: 1347650901}
   - component: {fileID: 1347650900}
+  - component: {fileID: 1347650907}
   m_Layer: 5
   m_Name: BladEagle
   m_TagString: Bald
@@ -5969,8 +6019,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collider2D: {fileID: 1347650903}
-  rigidBody2D: {fileID: 0}
-  rotationSpeed: 0
+  rigidBody2D: {fileID: 1347650904}
+  spin: {fileID: 0}
 --- !u!58 &1347650903
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6046,6 +6096,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1347650898}
   m_CullTransparentMesh: 1
+--- !u!114 &1347650907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1347650898}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 042faf1b42933d2409edc28414c46f48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 300
 --- !u!1 &1383638675
 GameObject:
   m_ObjectHideFlags: 0
@@ -6203,6 +6266,7 @@ GameObject:
   - component: {fileID: 1426664206}
   - component: {fileID: 1426664205}
   - component: {fileID: 1426664204}
+  - component: {fileID: 1426664211}
   m_Layer: 5
   m_Name: WhiteEagle
   m_TagString: White
@@ -6282,8 +6346,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collider2D: {fileID: 1426664207}
-  rigidBody2D: {fileID: 0}
-  rotationSpeed: 0
+  rigidBody2D: {fileID: 1426664208}
+  spin: {fileID: 0}
 --- !u!58 &1426664207
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6359,6 +6423,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1426664202}
   m_CullTransparentMesh: 1
+--- !u!114 &1426664211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426664202}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 042faf1b42933d2409edc28414c46f48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 300
 --- !u!1 &1476615332
 GameObject:
   m_ObjectHideFlags: 0
@@ -6375,6 +6452,7 @@ GameObject:
   - component: {fileID: 1476615336}
   - component: {fileID: 1476615335}
   - component: {fileID: 1476615334}
+  - component: {fileID: 1476615341}
   m_Layer: 5
   m_Name: WhiteEagle
   m_TagString: White
@@ -6454,8 +6532,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collider2D: {fileID: 1476615337}
-  rigidBody2D: {fileID: 0}
-  rotationSpeed: 0
+  rigidBody2D: {fileID: 1476615338}
+  spin: {fileID: 0}
 --- !u!58 &1476615337
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6531,6 +6609,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1476615332}
   m_CullTransparentMesh: 1
+--- !u!114 &1476615341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476615332}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 042faf1b42933d2409edc28414c46f48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 300
 --- !u!1 &1550059039
 GameObject:
   m_ObjectHideFlags: 0
@@ -6547,6 +6638,7 @@ GameObject:
   - component: {fileID: 1550059043}
   - component: {fileID: 1550059042}
   - component: {fileID: 1550059041}
+  - component: {fileID: 1550059048}
   m_Layer: 5
   m_Name: GoldenEagle
   m_TagString: Gold
@@ -6627,7 +6719,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collider2D: {fileID: 1550059044}
   rigidBody2D: {fileID: 1550059045}
-  rotationSpeed: 0
+  spin: {fileID: 0}
 --- !u!58 &1550059044
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6703,6 +6795,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1550059039}
   m_CullTransparentMesh: 1
+--- !u!114 &1550059048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550059039}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 042faf1b42933d2409edc28414c46f48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 300
 --- !u!1 &1555715331
 GameObject:
   m_ObjectHideFlags: 0
@@ -6862,6 +6967,7 @@ GameObject:
   - component: {fileID: 1611883121}
   - component: {fileID: 1611883120}
   - component: {fileID: 1611883119}
+  - component: {fileID: 1611883126}
   m_Layer: 5
   m_Name: BlackEagle
   m_TagString: Black
@@ -6941,8 +7047,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collider2D: {fileID: 1611883122}
-  rigidBody2D: {fileID: 0}
-  rotationSpeed: 0
+  rigidBody2D: {fileID: 1611883123}
+  spin: {fileID: 0}
 --- !u!58 &1611883122
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7018,6 +7124,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1611883117}
   m_CullTransparentMesh: 1
+--- !u!114 &1611883126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611883117}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 042faf1b42933d2409edc28414c46f48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 300
 --- !u!1 &1619550771
 GameObject:
   m_ObjectHideFlags: 0
@@ -8104,6 +8223,7 @@ GameObject:
   - component: {fileID: 1981905421}
   - component: {fileID: 1981905420}
   - component: {fileID: 1981905426}
+  - component: {fileID: 1981905427}
   m_Layer: 5
   m_Name: BlackEagle
   m_TagString: Black
@@ -8163,8 +8283,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collider2D: {fileID: 1981905422}
-  rigidBody2D: {fileID: 0}
-  rotationSpeed: 0
+  rigidBody2D: {fileID: 1981905423}
+  spin: {fileID: 0}
 --- !u!58 &1981905422
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8260,6 +8380,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1981905427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981905417}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 042faf1b42933d2409edc28414c46f48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 300
 --- !u!1 &1982815023
 GameObject:
   m_ObjectHideFlags: 0

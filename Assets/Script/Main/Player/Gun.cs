@@ -72,7 +72,7 @@ public class Gun : MonoBehaviour
             totalBulletCount = 0;
             curcleCollider2D.enabled = false;
         }
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.2f);
         curcleCollider2D.enabled = false;
         // 발사 소리 재생
         shotAudioPlayer.PlayOneShot(shotClip);
