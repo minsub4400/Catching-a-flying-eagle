@@ -14,9 +14,9 @@ public class BackgroundLoop : MonoBehaviour
     }
     private void Update()
     {
-        if (transform.position.y <= -20)
+        if (transform.position.y <= -540)
         {
-            // 화면을 아래쪽으로 이어 붙임
+            // 화면을 위쪽으로 이어 붙임
             Reposition();
         }
     }
@@ -24,7 +24,7 @@ public class BackgroundLoop : MonoBehaviour
     // 위치를 리셋하는 메서드
     private void Reposition()
     {
-        Vector2 offset = new Vector2(0, +20 * 2f);
+        Vector2 offset = new Vector2(0, 1080 * 2);
         transform.position = (Vector2)transform.position + offset;
     }
 }

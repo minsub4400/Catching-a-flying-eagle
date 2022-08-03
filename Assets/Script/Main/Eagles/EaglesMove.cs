@@ -1,38 +1,37 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-// 독수리들은 랜덤의 방향으로 움직인다. -1 : 왼쪽, 0 : 가만히, 1 : 오른쪽
 // 스피드는 독수리의 종류마다 다르다.
 
 public class EaglesMove : MonoBehaviour
 {
     // X 행동 최소 범위
-    public float XminMove = -30f;
+    public float XminMove = 0f;
     // X 행동 최대 범위
-    public float XmaxMove = 30f;
+    public float XmaxMove = 1920f;
 
     // Y 행동 최소 범위
-    public float YminMove = -10f;
+    public float YminMove = 0f;
     // Y 행동 최대 범위
-    public float YmaxMove = 10f;
+    public float YmaxMove = 1080f;
     // 행동 범위 저장 변수
     private float randMoveX;
     private float randMoveY;
     private Vector2 randMoveXY;
     // 행동 스피드
-    public float moveSpeed = 0.03f;
+    public float moveSpeed = 3f;
 
     // 방향 전환을 확인하기 위한 변수
-    private bool isRight; // 오른쪽
-    private bool isLeft;   // 왼쪽
     private Animator animator;
 
     // 베지어 커브 사용을 위한 애니매이션
     /*[SerializeField]
     private AnimationCurve curve;*/
 
-    public GameObject point1;
+    //public GameObject point1;
+    public Image point1;
     private float Timer;
 
     // Collider 가져오기
@@ -45,8 +44,6 @@ public class EaglesMove : MonoBehaviour
         randMoveY = Random.Range(YminMove, YmaxMove);
         circleCollider2D = GetComponent<CircleCollider2D>();
         Timer = 0f;
-        isRight = false;
-        isLeft = false;
         animator = GetComponent<Animator>();
     }
 

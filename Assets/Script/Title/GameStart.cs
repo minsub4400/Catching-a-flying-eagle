@@ -30,7 +30,7 @@ public class GameStart : MonoBehaviour
         if (collision.tag == "SelectCursor" && isMouseClick)
         {
             gameManager = FindObjectOfType<GameManager>();
-            gameManager.isGame = true;
+            gameManager.isGameStart = true;
         } 
     }
 }
